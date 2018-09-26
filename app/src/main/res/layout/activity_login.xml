@@ -8,15 +8,17 @@
     tools:context=".LoginActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="@string/login_text"
         />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/login_name"
+        android:hint="@string/indicate"
         android:inputType="textEmailAddress"
         />
 
@@ -37,5 +39,12 @@
         android:layout_height="wrap_content"
         android:src="@drawable/flag"
         />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button1" />
+
 
 </LinearLayout>

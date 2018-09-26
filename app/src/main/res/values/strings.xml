@@ -1,10 +1,19 @@
 <resources>
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Lab3</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
-    <string name="login">Login</string>
-    <string name="login_name">login name</string>
+    <string name="login_text">Login</string>
+    <string name="indicate">login name</string>
     <string name="password">password</string>
-    <string name="what">What does this do</string>
+    <string name="radioButton1">RadioButton</string>
+    <string name="checkBox1">CheckBox</string>
+    <string name="what">What does this do?</string>
 
+    <string name="Button1">Log in</string>
+    <string name="dialog_message">Exit?</string>
+    <string name="SwitchOn">Switch On</string>string>
+    <string name="SwitchOff">Switch Off</string>string>
+    <string name="dialog_title">Alert</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
