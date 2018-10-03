@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class StartActivity extends Activity {
+    Button buttonChat;//lab4
     protected static final String ACTIVITY_NAME="StartActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +24,20 @@ public class StartActivity extends Activity {
                startActivityForResult(intent,50);
            }
         });
+
+        /* lab4 */
+        buttonChat = findViewById(R.id.chatButton);
+        buttonChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME,"User clicked Start Chat");
+                Intent intent = new Intent(StartActivity.this,ChatWindow.class);
+                startActivity(intent);
+            }
+        });
     }
 
+    @Override
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
         if(requestCode == 50){
             Log.i(ACTIVITY_NAME,"Returned to StartActivity.onActivityResult");
