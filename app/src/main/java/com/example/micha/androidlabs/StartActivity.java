@@ -21,7 +21,8 @@ public class StartActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener(){
            public void onClick(View v){
                Intent intent = new Intent(StartActivity.this,ListItemsActivity.class);
-               startActivityForResult(intent,50);
+               int REQUEST_CODE = 50;
+               startActivityForResult(intent, REQUEST_CODE);
            }
         });
 
@@ -39,26 +40,23 @@ public class StartActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
-        if(requestCode == 50){
+        if(responseCode == RESULT_OK && requestCode == 50){
+            String messagePassed = data.getStringExtra("Response")+"Returned to StartActivity.onActivityResult";
             Log.i(ACTIVITY_NAME,"Returned to StartActivity.onActivityResult");
+            Toast.makeText(this, messagePassed,Toast.LENGTH_LONG).show();
         }
-        if(responseCode == Activity.RESULT_OK){
-            String messagePassed = data.getStringExtra("Response");
-            CharSequence text = "ListItemActivity passed";
-            Toast.makeText(getApplicationContext(),text+messagePassed,Toast.LENGTH_LONG).show();
-        }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(ACTIVITY_NAME,"In onResume()");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Log.i(ACTIVITY_NAME,"In onStart()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(ACTIVITY_NAME,"In onResume()");
     }
 
     @Override
