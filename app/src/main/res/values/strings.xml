@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab5</string>
+    <string name="app_name">Lab8</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
     <string name="login_text">Login</string>
@@ -17,6 +17,22 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
 
+    <string name="testToolbarButton">Test Toolbar</string>
+    <string name="dialog_title2">Do you want to go back?</string>
+    <string name="ok2">OK</string>
+    <string name="cancel2">Cancel</string>
+    <string name="defaultMsg">Type here</string>
+
     <string name="chatButton">Start Chat</string>
     <string name="sendButton">Send</string>
+
+    <string name="weatherButton">Weather Forecast</string>
+    <string name="current_temp">Current Temperature: </string>
+    <string name="min_temp">Minimum Temperature: </string>
+    <string name="max_temp">Maximum Temperature: </string>
+    <string name="wind_spd">Wind Speed: </string>
+
+    <string name="ID">ID=</string>
+    <string name="message">MessageHere</string>
+    <string name="delete">Delete This Message</string>
 </resources>

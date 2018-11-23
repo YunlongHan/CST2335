@@ -30,4 +30,18 @@
         android:layout_width="match_parent"
         android:text="@string/chatButton"
         />
+
+    <Button
+        android:id="@+id/weatherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weatherButton"
+        />
+
+    <Button
+        android:id="@+id/testToolbarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/testToolbarButton"
+        />
 </LinearLayout>

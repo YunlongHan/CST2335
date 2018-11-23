@@ -27,7 +27,7 @@ public class LoginActivity extends Activity {
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 SharedPreferences.Editor editor = prefs.edit();
-                editor.putString("email",editText.getText().toString());
+                editor.putString("DefaultEmail",editText.getText().toString());
                 editor.commit();
 
                 Intent intent = new Intent(LoginActivity.this, StartActivity.class);

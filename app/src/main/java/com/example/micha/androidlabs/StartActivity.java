@@ -1,6 +1,7 @@
 package com.example.micha.androidlabs;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,7 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class StartActivity extends Activity {
-    Button buttonChat;//lab4
+    Button buttonChat, buttonWeather, buttonToolbar;//lab4
     protected static final String ACTIVITY_NAME="StartActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,16 @@ public class StartActivity extends Activity {
            }
         });
 
+        /* lab6 */
+        final Button button2 = (Button)findViewById(R.id.weatherButton);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivity(intent);
+            }
+        });
+
         /* lab4 */
         buttonChat = findViewById(R.id.chatButton);
         buttonChat.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +44,15 @@ public class StartActivity extends Activity {
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME,"User clicked Start Chat");
                 Intent intent = new Intent(StartActivity.this,ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonToolbar = (Button)findViewById(R.id.testToolbarButton);
+        buttonToolbar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, TestToolbar.class);
                 startActivity(intent);
             }
         });

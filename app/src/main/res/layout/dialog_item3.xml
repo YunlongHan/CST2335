@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:src="@drawable/add5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="center"
+         />
+
+    <TextView
+        android:id="@+id/newMsgText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your new nessage?
+        "/>
+
+    <EditText
+        android:id="@+id/newMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/defaultMsg"
+        />
+</LinearLayout>
